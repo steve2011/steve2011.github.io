@@ -1,0 +1,10 @@
+{
+    "generationTool": "pwabuilder-api",
+    "generationToolVersion": "2.0.1-rc.0",
+    "platformId": "web",
+    "platformPackage": "pwabuilder-web",
+    "platformVersion": "2.0.0-rc.2",
+    "generatedFrom": "Website Wizard",
+    "generationDate": "2018-11-19 23:05:37 Z",
+    "generatedURL": "https://steve2011.github.io/manifest.json"
+}
