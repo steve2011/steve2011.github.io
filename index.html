@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
      <link rel="manifest" href="manifest.json">
+
      <link rel="stylesheet" href="serviceworker.js" />
     <!-- Bootstrap core CSS -->
     <link href="bootstrap4/bootstrap4css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +21,7 @@
     <!-- Custom styles for this template -->
     <link href="cssStyle.css" rel="stylesheet">
     <link href="mediaStyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="mapform.css" type="text/css" />
 
   <style>
   body, html {
@@ -180,15 +182,63 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 
    </style>
 
+    <style type="text/css">
+        #topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #fff;
+	transition: background-color .2s, color .2s;
+
+	&:hover,
+	&:focus {
+		background-color: #333;
+		color: #fff;
+	}
+}
+
+#topheader .navbar-nav li.active > a {
+	background-color: #333;
+	color: #fff;
+}
+    </style>
+  <style type="text/css">
+     hr.style14 {
+  border: 0;
+  border: 2px solid olive;
+  /*
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); */
+
+}
+   @media (max-width:768px){
+       .sm{
+           font-size: 15px;
+           margin-top: 30px;
+       }
 
 
+       aside {
+           display:none;
+       }
 
+   }
+  </style>
+     <style type="text/css">
+   .pattern {min-height:200px;}
+
+   .stripes13 {
+      background-image: repeating-linear-gradient(165deg, #ccc, #ccc 60px, #dbdbdb 60px, #dbdbdb 120px);
+}
+
+ </style>
 
   </head>
 
   <body>
 
     <!-- Navigation -->
+     <div id="topheader">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Progressive Web App Project</a>
@@ -202,27 +252,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
                 <span class="sr-only">(current)</span>
               </a>
             </li>
+            <!--
             <li class="nav-item">
               <a class="nav-link" href="aboutpwa.html">About</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#pwa">PWA</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#advantage">Advantage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#popularity">popularity</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#engagement">Engagement</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#speed">Speed</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    </div>
 
-
-
-       <div class="container">
-            <h3> <span style="color: purple;  margin-left1:300px;">Stephen Jolayemi</span>
+        <!-- *****************************************-->
+       <section id="home">
+       <div class="container">  <br>
+            <h3 class="sm"> <span style="color: purple;  margin-left1:300px;">Stephen Jolayemi</span>
              welcome you to his Progressive Web App website</h3>
-       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <hr class="border bg-primary" />
+                <hr class="style14" />
 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ul class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -264,9 +330,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
   </a>
 </div><!-- # carousel -->
 </div><!-- #container -->
+  </section><!--*********************************************** #home-->
+
+
 
     <!-- Page Content -->
+    <section id="pwa" class="pattern stripes13">
     <div class="container">
+      <hr class="border bg-primary" />
+      <hr class="style14" />
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
        <h5>The benefits of Progressive Web Apps
@@ -280,7 +352,15 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
   </div>
         <a href="#" class="btn btn-primary btn-lg float-right">More</a>
       </header>
+      </div><!--container-->
+     </section>
 
+
+     <section id="advantage">
+     <br><br><br>
+      <div class="container">
+          <hr class="border bg-primary" />
+          <hr class="style14" />
       <!-- Page Features -->
       <div class="row text-center">
         <div class="col-md-6 mb-4">
@@ -292,11 +372,11 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
               A progressive web app takes advantage of the latest the web has to offer.
               </p>
             </div>
-            <div class="card-footerr">
+            <div class="card-footer">
               <a href="#" class="btn btn-primary">Find Out More!</a>
             </div>
           </div>
-        </div>
+        </div><!-- col-md-6 mb-4 -->
 
         <div class=" col-md-6 mb-4">
           <div class="card">
@@ -310,11 +390,11 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
               <a href="#" class="btn btn-primary">Find Out More!</a>
             </div>
           </div>
-        </div>
+        </div><!-- col-md-6 mb-4 -->
          </div><!-- .row -->
 
 
-          <div class="row text-center">
+         <div class="row text-center">
         <div class="col-md-6 mb-4">
           <div class="card">
             <img class="card-img-top img-fluid img responsive" src="img/s4.jpg" alt="s4" width="800" height="500">
@@ -327,7 +407,7 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
               <a href="#" class="btn btn-primary">Find Out More!</a>
             </div>
           </div>
-        </div>
+        </div><!-- col-md-6 mb-4-->
 
         <div class="col-md-6 mb-4">
           <div class="card">
@@ -342,10 +422,16 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
               <a href="#" class="btn btn-primary float-left">Find Out More!</a>
             </div>
           </div>
-        </div>
+        </div><!--col-md-6 mb-4 -->
         </div><!-- class first row-->
+        </div><!--container-->
+         </section>
 
-
+          <section id="popularity" class="pattern stripes13">
+          <br><br>
+          <div class="container">
+                <hr class="border bg-primary" />
+                <hr class="style14" />
           <div class="row text-center">
           <div class="col-md-6 mb-4">
           <div class="card">
@@ -359,7 +445,7 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
               <a href="#" class="btn btn-primary float-left">Find Out More!</a>
             </div>
           </div>
-        </div>
+        </div><!-- col-md-6 mb-4 -->
 
 
            <div class="col-md-6 mb-4">
@@ -373,15 +459,18 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
               <a href="#" class="btn btn-primary float-left">Find Out More!</a>
             </div>
           </div>
-        </div>
+        </div><!--col-md-6 mb-4 -->
         </div><!-- .row-->
       </div><!-- container -->
-      <!-- /.row -->
+       </section><!-- #popularity -->
+     <!--************************************************************-->
 
-
-
+         <section id="engagement">
+         <br><br><br>
          <!-- Page Features -->
          <div class="container">
+            <hr class="border bg-primary" />
+            <hr class="style14" />
       <div class="row text-center">
         <div class="col-md-6 mb-4">
           <div class="card">
@@ -413,17 +502,25 @@ You can access your app directly from home screen link-adding feature which allo
         </div>
          </div><!-- .row -->
          </div><!--  .container-->
+         </section><!-- engagement-->
+        <!--********************************************************-->
 
+
+          <section id="speed" class="pattern stripes13">
+          <br><br><br>
          <div class="container">
+           <hr class="border bg-primary" />
+            <hr class="style14" />
          <div class="row text-center">
         <div class="col-md-6 mb-4">
           <div class="card">
             <img class="card-img-top img-fluid img responsive" src="img/s10.png" alt="S 10" width="800" height="500">
             <div class="card-body">
               <h4 class="card-title">Speed of PWA's</h4>
-              <p class="card-text">When it comes to speed, Progressive Web Apps are highly reliable and efficient. Service Workers and JavaScript's runs from main web thread, does allows PWA to load instantly, regardless of how slow your internet is. PWA have smooth scrolling, animations, and navigation, allowing users to perceive it as a native application.
+              <p class="card-text">When it comes to speed, Progressive Web Apps are highly reliable and efficient. Service Workers and JavaScript's runs from main web thread, does allows PWA to load instantly, regardless of how slow your internet is.
+              PWA have smooth scrolling, animations, and navigation, allowing users to perceive it as a native application.
                Finally, Google Mobile Apps are dying, and the future is progressive. In the future, e-commerce sites, none e-commerce websites and media sources will move from native apps to Progressive Web App. (Elliott, n.d.)
-</p>
+              </p>
             </div>
             <div class="card-footerr">
               <a href="#" class="btn btn-primary">Find Out More!</a>
@@ -436,13 +533,15 @@ You can access your app directly from home screen link-adding feature which allo
             <img class="card-img-top img-fluid img responsive" src="img/s11.jpg" alt="S 11" width="800" height="500">
             <div class="card-body">
               <h4 class="card-title">PWA advantages</h4>
-              <p class="card-text"><ul><li>Work for each user, despite browser alternative, because of they are designed with progressive improvement as a core dogma. It's progressive.</li>
-<li>Fit any type issue, desktop, mobile, tablet, or no matter is next. It's responsive.</li>
-<li>Enhance with service staff to figure offline or on quality networks (connectivity independent) </li>
-<li>Use the app-shell model to produce app-style navigation and interactions. App-like. </li>
-<li>Always up-to-date due to the service worker update method. Forever refreshing itself.</li>
-</ul>
-</p>
+              <p class="card-text">
+              <ul>
+              <li>Work for each user, despite browser alternative, because of they are designed with progressive improvement as a core dogma. It's progressive.</li>
+               <li>Fit any type issue, desktop, mobile, tablet, or no matter is next. It's responsive.</li>
+               <li>Enhance with service staff to figure offline or on quality networks (connectivity independent) </li>
+               <li>Use the app-shell model to produce app-style navigation and interactions. App-like. </li>
+               <li>Always up-to-date due to the service worker update method. Forever refreshing itself.</li>
+              </ul>
+               </p>
             </div>
             <div class="card-footerr">
               <a href="#" class="btn btn-primary">Find Out More!</a>
@@ -452,6 +551,93 @@ You can access your app directly from home screen link-adding feature which allo
         </div>
       </div><!-- /.row -->
       </div>  <!-- /.container -->
+      </section><!--#speed -->
+
+
+      <section id="contact">
+      <br><br><br><br><br><br>
+      <aside class="pos">
+     <p id="demo"></p>
+     <div class="butt">
+     <button onclick="clearInterval(myVar)" class="btn btn-info" ><span class="btn btn-primary btn-outline-primary text-white">Stop time</span></button>
+      </div>
+ </aside>
+
+
+  <div class="container-fluid">
+       <div class="row">
+            <div class="col-md-6 bg-light"> <br><br>
+                   <h4 class="pb-1 text-center">Drop me a Line</h4>
+                    <div class="pb-1">
+                     <h6 class="text-center">Don't hesitate to contact me</h6>
+                    </div>
+                    <div class="icon-contacts">
+                        <p class="text-center" style="margin:0px;">
+                            Looking for entry level web developer role.
+                        </p>
+
+                        <p class="text-center lead">
+                           <span class="bg-info">Phone: +(44) 74 0552 4115</span>  <br />
+                            <span class="bg-primary">Email:stephenjola2011@gmail.com</span>
+                        </p>
+                    </div>
+
+                    <div class="border">
+                        <h3 class="my-3">Thanks for filling out the form!</h3>
+                    </div>
+                     <form name="myForm" class="" action="mailto:stephenjola2011@gmail.com" method="get" onsubmit="return validateForm()"  enctype="text/plain">
+                        <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                               <label for="name">Name</label>
+                                <input type="text" class="form-control input" name="name" placeholder="Your Name" required="">
+                             </div>
+                             </div>
+
+                            <div class="col-md-6">
+                                 <div class="form-group">
+                               <label for="name">Phone</label>
+                                <input type="text" class="form-control input" name="phone" placeholder="Phone" required="">
+                            </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                               <label for="email">Email:</label>
+                                <input type="text" class="form-control input" name="email" data-form-field="Email" placeholder="Email" required="" id="email-form4-4v">
+                            </div>
+                            </div>
+
+                            <div class="col-md-12">
+                              <div class="form-group">
+                               <label for="name">Text area:</label>
+                                <textarea class="form-control input textarea" name="message"  placeholder="Message"></textarea>
+                            </div>
+                            </div>
+
+                            <div class="input-group-btn col-md-12" style="margin-top: 40px;">
+                                <input type="reset" class="btn btn-warning  btn-form" value="Reset"> &nbsp;&nbsp;&nbsp;
+                                <input type="submit" class="btn btn-info btn-form mr-3 pb-3" value="Submit">
+
+                            </div>
+                        </div><!--row--> <br>
+                    </form>
+                  </div><!--col-md-6-->
+
+                  <!-- ************************* map ********************-->
+                         <div class="col-md-6 bg-white">
+                          <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9943.591712078363!2d-0.017357501792174195!3d51.46003047403692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876026540ef2ca1%3A0x87aa4d6c806da306!2sLewisham%2C+London!5e0!3m2!1sen!2suk!4v1555023890646!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                         </div>
+                        </div><!--col-md-6-->
+                <!--**************** END FORM **********************-->
+
+         </div><!--row-->
+         </div><!--container-->
+      </section>
+
+
+
 
 
 
@@ -467,7 +653,7 @@ You can access your app directly from home screen link-adding feature which allo
       <!--Grid row-->
       <div class="row d-flex justify-content-center">
         <div class="col-md-6">
-           <h2 style="color: white">PWA Developer</h2>
+           <h2 style="color: white">Web Developer</h2>
   <!-- Button to Open the Modal -->
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
     About me
@@ -486,7 +672,7 @@ You can access your app directly from home screen link-adding feature which allo
 
         <!-- Modal body -->
         <div class="modal-body">
-         <img src="img/Bodunrin 2a.jpg" class="img-fluid img-responsive" alt="Stephen" width="500" height="535" />
+         <img src="img/Stephen.jpg" class="img-fluid img-responsive" alt="Stephen" width="500" height="535" />
         </div>
 
         <!-- Modal footer -->
@@ -517,20 +703,20 @@ You can access your app directly from home screen link-adding feature which allo
 
      <p class="m-0 text-center text-white foot footer">
      Stephen Jolayemi &nbsp; &nbsp;Copyright &copy; Created for class project demo 2018
-     </p>
+     </p>    <!--
            <img src="img/Bodunrin 2a.jpg" alt="Bodunrin" class="avatar float-right img-fluid" width="500" height="535">
-           <img src="img/Bodunrin 2a.jpg" alt="Bodunrin" class="avatar float-left img-fluid rotateimg180" width="500" height="535">
+           <img src="img/Bodunrin 2a.jpg" alt="Bodunrin" class="avatar float-left img-fluid rotateimg180" width="500" height="535">-->
 
     <!-- Copyright -->
 
   </footer>
-     <div class="container">
+           <div class="container">
                 <a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-3x social" style="font-size:40px; color: green"></i></a>  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;
 	            <a href="https://twitter.com/"><i class="fa fa-twitter-square fa-3x social" style="font-size:40px;"></i></a>&nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;
 	            <a href="https://plus.google.com/"><i class="fa fa-google-plus-square fa-3x social" style="font-size:40px; color: purple"></i></a> &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;
 	            <a href="mailto:stephenjola2011@gmail.com"><i class="fa fa-envelope-square fa-3x social" style="font-size:20px; color: black">Email</i></a> &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;
-                  <button style="font-size:20px">Button <i class="fa fa-twitter"></i></button>
-                </div>
+                 <!-- <button style="font-size:20px">Button <i class="fa fa-twitter"></i></button>-->
+           </div>
   <!-- Footer -->
 
 
@@ -548,5 +734,41 @@ if('serviceWorker' in navigator) {
            .then(function() { console.log("Service Worker Registered"); });
 }
 </script>
+
+   <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
+</script>
+
+  <script type="text/javascript">
+   $( '#topheader .navbar-nav a' ).on( 'click', function () {
+	$( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
+
+  </script>
+
+   <script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+
+
+ <script>
+var myVar = setInterval(myTimer ,1000);
+function myTimer() {
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+
   </body>
 </html>
