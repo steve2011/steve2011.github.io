@@ -585,7 +585,9 @@ You can access your app directly from home screen link-adding feature which allo
                     <div class="border">
                         <h3 class="my-3">Thanks for filling out the form!</h3>
                     </div>
-                     <form name="myForm" class="" action="https://formspree.io/stephenjola2011@gmail.com" method="post" onsubmit="return validateForm()"  enctype="text/plain">
+
+                     <!--
+                     <form name="myForm" class="" action="mailto:stephenjola2011@gmail.com" method="get" onsubmit="return validateForm()"  enctype="text/plain">
                         <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
@@ -620,8 +622,51 @@ You can access your app directly from home screen link-adding feature which allo
                                 <input type="submit" class="btn btn-info btn-form mr-3 pb-3" value="Submit">
 
                             </div>
+                        </div><!--row-- <br>
+                    </form>-->
+                       <form name="myForm" class="" action="form.php" method="post" onsubmit="return validateForm()"  enctype="text/plain">
+                        <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                               <label for="firstname">First Name:</label>
+                                <input type="text" class="form-control input" name="first_name" placeholder="Your Name" required="">
+                             </div>
+
+                              <div class="form-group">
+                               <label for="lastname">Last Name:</label>
+                                <input type="text" class="form-control input" name="last_name" placeholder="Your Name" required="">
+                             </div>
+                             </div>
+
+                            <div class="col-md-6">
+                                 <div class="form-group">
+                               <label for="telephone">Telephone:</label>
+                                <input type="text" class="form-control input" name="phone" placeholder="Phone" required="">
+                            </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                               <label for="email">Email:</label>
+                                <input type="text" class="form-control input" name="email" data-form-field="Email" placeholder="Email" required="" id="email-form4-4v">
+                            </div>
+                            </div>
+
+                            <div class="col-md-12">
+                              <div class="form-group">
+                               <label for="comments">Comments::</label>
+                                <textarea class="form-control input textarea" name="comments"  placeholder="Message"></textarea>
+                            </div>
+                            </div>
+
+                            <div class="input-group-btn col-md-12" style="margin-top: 40px;">
+                                <input type="reset" class="btn btn-warning  btn-form" value="Reset"> &nbsp;&nbsp;&nbsp;
+                                <input type="submit" class="btn btn-info btn-form mr-3 pb-3" value="Submit">
+
+                            </div>
                         </div><!--row--> <br>
                     </form>
+
                   </div><!--col-md-6-->
 
                   <!-- ************************* map ********************-->
