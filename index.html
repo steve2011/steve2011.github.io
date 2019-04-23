@@ -75,12 +75,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', end
    }
 
 
-   .card img {
+   .card img1 {
            -webkit-border-radius: 30px;
            -moz-border-radius: 30px;
-           border-radius: 25px;
-           -webkit-box-shadow: 4px 5px 6px 3px #7AE9FF;
-           box-shadow: 4px 5px 6px 3px #7AE9FF;
+           border-radius: 30px;
+          /* -webkit-box-shadow: 4px 5px 6px 3px #7AE9FF;
+          box-shadow: 4px 5px 6px 3px #7AE9FF; */
             -webkit-transition: background 2s linear;
           -moz-transition: background 2s linear;
            -ms-transition: background 2s linear;
@@ -92,7 +92,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', end
     .card img:hover {
             background-color: rgba(252, 251, 217, 1);
            cursor: pointer;
-
            -moz-transform: scale(1) rotate(2deg) translateX(2px) skewX(2deg);
 -webkit-transform: scale(1) rotate(2deg) translateX(2px) skewX(2deg);
 -o-transform: scale(1) rotate(2deg) translateX(2px) skewX(2deg);
@@ -153,11 +152,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
     }
 
 </style>
+
    <style type="text/css">
-
-
-
-
    @media screen and (min-width: 375px) and (max-width: 1000px) {
    h3 {
         background-color: #fff;
@@ -232,6 +228,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 }
 
  </style>
+  <style type="text/css">
+   .map-responsive {
+       position:relative;
+       padding-bottom1: 40%;
+       height: 0;
+       overflow:hidden;
+       height:auto;
+   }
+    .map-responsive iframe{
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height:100%;
+
+    }
+
+  </style>
+
 
   </head>
 
@@ -365,14 +380,14 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
       <div class="row text-center">
         <div class="col-md-6 mb-4">
           <div class="card">
-            <img class="card-img-top img-fluid img responsive" src="img/s1.png" alt="S1" width="800" height="500">
+            <img class="card-img-top img-fluid img-responsive" src="img/s1.png" alt="S1">
             <div class="card-body">
               <h4 class="card-title">Best of the web</h4>
               <p class="card-text">
               A progressive web app takes advantage of the latest the web has to offer.
               </p>
             </div>
-            <div class="card-footer">
+            <div class="">
               <a href="#" class="btn btn-primary">Find Out More!</a>
             </div>
           </div>
@@ -380,7 +395,7 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
 
         <div class=" col-md-6 mb-4">
           <div class="card">
-            <img class="card-img-top img-fluid img responsive" src="img/s2.jpeg" alt="s2" width="800" height="500">
+            <img class="card-img-top img-fluid img-responsive" src="img/s2.jpeg" alt="s2">
             <div class="card-body">
               <h4 class="card-title">PWA Characteristics</h4>
               <p class="card-text">Progressive enhacement used throughout, discoverable, responsive, app-like - looks and interacts like a native app
@@ -397,7 +412,7 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
          <div class="row text-center">
         <div class="col-md-6 mb-4">
           <div class="card">
-            <img class="card-img-top img-fluid img responsive" src="img/s4.jpg" alt="s4" width="800" height="500">
+            <img class="card-img-top img-fluid img-responsive" src="img/s4.jpg" alt="s4">
             <div class="card-body">
               <h4 class="card-title">A PWA is safe</h4>
               <p class="card-text">Re-engageable, installable, linkable, it is progressive, responsive, network independence, app-like.
@@ -411,7 +426,7 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
 
         <div class="col-md-6 mb-4">
           <div class="card">
-            <img class="card-img-top img-fluid img responsive" src="img/s5.png" alt="S5" width="800" height="500">
+            <img class="card-img-top img-fluid img responsive" src="img/s5.png" alt="S5">
             <div class="card-body">
               <h4 class="card-title">High Tide</h4>
               <p class="card-text">Seamless access for the users. It does not need any download or installation, unlike a native mobile app which obliged the users to go to apps store to purchase
@@ -419,7 +434,7 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
               .</p>
             </div>
             <div class="card-footerr">
-              <a href="#" class="btn btn-primary float-left">Find Out More!</a>
+              <a href="#" class="btn btn-primary text-center">Find Out More!</a>
             </div>
           </div>
         </div><!--col-md-6 mb-4 -->
@@ -555,7 +570,7 @@ You can access your app directly from home screen link-adding feature which allo
 
 
       <section id="contact">
-      <br><br><br><br><br><br>
+       <br> 
       <aside class="pos">
      <p id="demo"></p>
      <div class="butt">
@@ -577,8 +592,8 @@ You can access your app directly from home screen link-adding feature which allo
                         </p>
 
                         <p class="text-center lead">
-                           <span class="bg-info">Phone: +(44) 74 0552 4115</span>  <br />
-                            <span class="bg-primary">Email:stephenjola2011@gmail.com</span>
+                           <span class="">Phone: +(44) 74 0552 4115</span>  <br />
+                            <span class="">Email:stephenjola2011@gmail.com</span>
                         </p>
                     </div>
 
@@ -586,62 +601,29 @@ You can access your app directly from home screen link-adding feature which allo
                         <h3 class="my-3">Thanks for filling out the form!</h3>
                     </div>
 
-                     <!--
-                     <form name="myForm" class="" action="mailto:stephenjola2011@gmail.com" method="get" onsubmit="return validateForm()"  enctype="text/plain">
-                        <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                               <label for="name">Name</label>
-                                <input type="text" class="form-control input" name="name" placeholder="Your Name" required="">
-                             </div>
-                             </div>
 
-                            <div class="col-md-6">
-                                 <div class="form-group">
-                               <label for="name">Phone</label>
-                                <input type="text" class="form-control input" name="phone" placeholder="Phone" required="">
-                            </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="form-group">
-                               <label for="email">Email:</label>
-                                <input type="text" class="form-control input" name="email" data-form-field="Email" placeholder="Email" required="" id="email-form4-4v">
-                            </div>
-                            </div>
-
-                            <div class="col-md-12">
-                              <div class="form-group">
-                               <label for="name">Text area:</label>
-                                <textarea class="form-control input textarea" name="message"  placeholder="Message"></textarea>
-                            </div>
-                            </div>
-
-                            <div class="input-group-btn col-md-12" style="margin-top: 40px;">
-                                <input type="reset" class="btn btn-warning  btn-form" value="Reset"> &nbsp;&nbsp;&nbsp;
-                                <input type="submit" class="btn btn-info btn-form mr-3 pb-3" value="Submit">
-
-                            </div>
-                        </div><!--row-- <br>
-                    </form>-->
                        <form name="myForm" class="" action="form1.php" method="post" onsubmit="return validateForm()">
                         <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
                                <label for="firstname">First Name:</label>
-                                <input type="text" class="form-control input" name="first_name" placeholder="Your Name" required="">
+                                <input type="text" class="form-control input" name="first_name" placeholder="First Name" required="">
                              </div>
 
                               <div class="form-group">
                                <label for="lastname">Last Name:</label>
-                                <input type="text" class="form-control input" name="last_name" placeholder="Your Name" required="">
+                                <input type="text" class="form-control input" name="last_name" placeholder="Last Name" required="">
                              </div>
                              </div>
 
                             <div class="col-md-6">
-                                 <div class="form-group">
-                               <label for="telephone">Telephone:</label>
-                                <input type="text" class="form-control input" name="phone" placeholder="Phone" required="">
+                            <div class="form-group">
+                               <label for="telephone">Landline:</label>
+                                <input type="text" class="form-control input" name="HomeTelephone" placeholder="Land line" required="">
+                            </div>
+                             <div class="form-group">
+                               <label for="mobile">Mobile:</label>
+                                <input type="text" class="form-control input" name="phone" placeholder="Mobile number" required="">
                             </div>
                             </div>
 
@@ -749,8 +731,8 @@ You can access your app directly from home screen link-adding feature which allo
 
     <!-- Copyright -->
 
-     <p class="m-0 text-center text-white foot footer">
-     Stephen Jolayemi &nbsp; &nbsp;Copyright &copy; Created for class project demo 2018
+     <p class="m-0 text-center text-white foott footer">
+     Designed by StephenJ  Copyright &copy; 2018
      </p>    <!--
            <img src="img/Bodunrin 2a.jpg" alt="Bodunrin" class="avatar float-right img-fluid" width="500" height="535">
            <img src="img/Bodunrin 2a.jpg" alt="Bodunrin" class="avatar float-left img-fluid rotateimg180" width="500" height="535">-->
