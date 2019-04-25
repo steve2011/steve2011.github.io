@@ -13,6 +13,21 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
      <link rel="manifest" href="manifest.json">
+     <!--#################################################################-->
+          <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+
+     <!--***************************************************************-->
 
      <link rel="stylesheet" href="serviceworker.js" />
     <!-- Bootstrap core CSS -->
@@ -246,7 +261,76 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
     }
 
   </style>
+      <style type="text/css"> /*
+          @media (max-width: 996px) {
+       #home {
+          padding-top: 340px;
+          background-color:olive;
+        }
 
+         #pwa {
+          padding-top: 340px;
+           background-color:red;
+        }
+
+
+         #advantage {
+          padding-top: 340px;
+           background-color:blue;
+        }
+
+        #popularity {
+          padding-top: 340px;
+           background-color:red;
+        }
+
+
+  #engagement {
+          padding-top: 140px;
+           background-color:red;
+        }
+
+         #speed {
+          padding-top: 140px;
+           background-color:red;
+        }
+
+         #contact {
+          padding-top: 100px;
+           background-color:green;
+        }
+
+
+      } */
+      </style>
+      <style type="text/css">
+         html {
+             font-size:1rem;
+         }
+           @include media-breakpoint-up(sm){
+               html{
+                   font-size: 1.2rem;
+               }
+
+           }
+
+
+           @include media-breakpoint-up(md){
+               html{
+                   font-size: 1.4rem;
+               }
+
+           }
+
+
+            @include media-breakpoint-up(lg){
+               html{
+                   font-size: 1.6rem;
+               }
+
+           }
+
+      </style>
 
   </head>
 
@@ -254,16 +338,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 
     <!-- Navigation -->
      <div id="topheader">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Progressive Web App Project</a>
+        <a class="navbar-brand js-scroll-trigger" href="#">Progressive Web App Project</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link js-scroll-trigger" href="#home">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -272,22 +356,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
               <a class="nav-link" href="aboutpwa.html">About</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#pwa">PWA</a>
+              <a class="nav-link js-scroll-trigger" href="#pwa">PWA</a>
             </li>
              <li class="nav-item">
-              <a class="nav-link" href="#advantage">Advantage</a>
+              <a class="nav-link js-scroll-trigger" href="#advantage">Advantage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#popularity">popularity</a>
+              <a class="nav-link js-scroll-trigger" href="#popularity">popularity</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#engagement">Engagement</a>
+              <a class="nav-link js-scroll-trigger" href="#engagement">Engagement</a>
             </li>
               <li class="nav-item">
-              <a class="nav-link" href="#speed">Speed</a>
+              <a class="nav-link js-scroll-trigger" href="#speed">Speed</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -442,7 +526,7 @@ Seamless Access for the Users (Goyal, 4 July 2017)</h5>
         </div><!--container-->
          </section>
 
-          <section id="popularity" class="pattern stripes13">
+          <section id="popularity" class="pattern stripes13" >
           <br><br>
           <div class="container">
                 <hr class="border bg-primary" />
@@ -570,7 +654,7 @@ You can access your app directly from home screen link-adding feature which allo
 
 
       <section id="contact">
-       <br> 
+       <br>
       <aside class="pos">
      <p id="demo"></p>
      <div class="butt">
@@ -799,6 +883,17 @@ function myTimer() {
 }
 </script>
 
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
 
   </body>
 </html>
